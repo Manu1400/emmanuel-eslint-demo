@@ -1,8 +1,8 @@
 <template>
     <div class="app-header">
         <div class="app-header__title">
-            Playground for <a href="https://github.com/vuejs/eslint-plugin-vue#readme" target="_blank" rel="noopener">
-                eslint-plugin-vue
+            Playground for <a href="https://github.com/Manu1400/eslint-plugin-emmanuel#readme" target="_blank" rel="noopener">
+                eslint-plugin-emmanuel
             </a>.
         </div>
         <label class="app-header__option-item">
