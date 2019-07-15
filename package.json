@@ -1,14 +1,16 @@
 {
-  "name": "vue-eslint-demo",
+  "name": "emmanuel-eslint-demo",
   "version": "1.8.0",
-  "description": "The online demo to check `eslint-plugin-vue`.",
+  "description": "The online demo to check `eslint-plugin-emmanuel`.",
   "engines": {
     "node": ">=8"
   },
   "files": [
     "dist"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "eslint-plugin-emmanuel": "^0.4.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/plugin-syntax-dynamic-import": "^7.0.0",
@@ -58,7 +60,7 @@
     "lint": "eslint . --ext .js,.vue --rulesdir eslint-rules",
     "preversion": "run-s -s lint build",
     "postversion": "git push --tags && git push",
-    "update-deps": "npm install eslint@latest eslint-plugin-vue@latest vue-eslint-parser@latest babel-eslint@latest",
+    "update-deps": "npm install eslint@latest eslint-plugin-emmanuel@latest vue-eslint-parser@latest babel-eslint@latest",
     "watch": "run-p -s watch:*",
     "watch:html": "cpx src/index.html dist --watch",
     "watch:js": "webpack-dev-server --open --hot"
