@@ -14,9 +14,9 @@ const VERSIONS = `export default ${JSON.stringify({
         repo: "eslint/eslint",
         version: require("eslint/package.json").version,
     },
-    "eslint-plugin-vue": {
-        repo: "vuejs/eslint-plugin-vue",
-        version: require("eslint-plugin-vue/package.json").version,
+    "eslint-plugin-emmanuel": {
+        repo: "Manu1400/eslint-plugin-emmanuel",
+        version: require("eslint-plugin-emmanuel/package.json").version,
     },
     "vue-eslint-parser": {
         repo: "mysticatea/vue-eslint-parser",
@@ -49,6 +49,10 @@ module.exports = env => {
     const browserlist = [">1%", "not dead", "not ie 11"]
 
     return {
+        // https://github.com/webpack-contrib/css-loader/issues/447#issuecomment-285598881
+        node: {
+            fs: "empty",
+        },
         mode,
         target: "web",
         entry: "./src/index.js",
