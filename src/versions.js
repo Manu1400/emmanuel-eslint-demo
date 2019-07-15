@@ -8,8 +8,8 @@ export default {
         repo: "eslint/eslint",
         version: "0.0.0",
     },
-    "eslint-plugin-vue": {
-        repo: "vuejs/eslint-plugin-vue",
+    "eslint-plugin-emmanuel": {
+        repo: "manu1400/eslint-plugin-emmanuel",
         version: "0.0.0",
     },
     "vue-eslint-parser": {

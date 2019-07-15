@@ -37,7 +37,7 @@ function exec(command) {
     console.log("LOAD GH-PAGES")
     if (ATOKEN) {
         await exec(
-            "git fetch --depth=1 https://github.com/mysticatea/vue-eslint-demo.git gh-pages:gh-pages",
+            "git fetch --depth=1 https://github.com/Manu1400/emmanuel-eslint-demo.git gh-pages:gh-pages",
         )
         await exec("git checkout gh-pages")
     } else {
@@ -85,7 +85,7 @@ function exec(command) {
             await exec(
                 `git push${
                     ATOKEN
-                        ? ` https://mysticatea:${ATOKEN}@github.com/mysticatea/vue-eslint-demo.git gh-pages:gh-pages`
+                        ? ` https://manu1400:${ATOKEN}@github.com/Manu1400/emmanuel-eslint-demo.git gh-pages:gh-pages`
                         : ""
                 }`,
             )

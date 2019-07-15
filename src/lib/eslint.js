@@ -1,10 +1,10 @@
 import Linter from "eslint4b"
-import plugin from "eslint-plugin-vue"
+import plugin from "eslint-plugin-emmanuel"
 import * as parser from "vue-eslint-parser"
 
 const verifyOptions = Object.freeze({
-    preprocess: plugin.processors[".vue"].preprocess,
-    postprocess: plugin.processors[".vue"].postprocess,
+    //preprocess: plugin.processors[".vue"].preprocess,
+    //postprocess: plugin.processors[".vue"].postprocess,
 })
 
 export const linter = new class extends Linter {
@@ -13,7 +13,7 @@ export const linter = new class extends Linter {
         super()
         this.defineParser("vue-eslint-parser", parser)
         for (const name of Object.keys(plugin.rules)) {
-            this.defineRule(`vue/${name}`, plugin.rules[name])
+            this.defineRule(`emmanuel/${name}`, plugin.rules[name])
         }
     }
 

@@ -1,13 +1,13 @@
 "use strict"
 
-const fs = require("fs")
+const { writeFileSync } = require("fs")
 
-fs.writeFileSync(
+writeFileSync(
     "dist/versions.json",
     JSON.stringify({
         "babel-eslint": require("babel-eslint/package.json").version,
         eslint: require("eslint/package.json").version,
-        "eslint-plugin-vue": require("eslint-plugin-vue/package.json").version,
+        "eslint-plugin-emmanuel": require("eslint-plugin-emmanuel/package.json").version,
         typescript: require("typescript/package.json").version,
         "typescript-eslint-parser": require("typescript-eslint-parser/package.json")
             .version,
