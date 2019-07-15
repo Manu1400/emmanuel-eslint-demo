@@ -12,6 +12,10 @@ export default {
         repo: "vuejs/eslint-plugin-vue",
         version: "0.0.0",
     },
+    "eslint-plugin-emmanuel": {
+        repo: "manu1400/eslint-plugin-emmanuel",
+        version: "0.0.0",
+    },
     "vue-eslint-parser": {
         repo: "mysticatea/vue-eslint-parser",
         version: "0.0.0",

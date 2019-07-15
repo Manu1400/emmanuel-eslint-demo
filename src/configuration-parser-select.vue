@@ -13,19 +13,19 @@ import ConfigurationCategory from "./configuration-category.vue"
 
 const PARSRES = Object.freeze([
     Object.freeze({
+        id: "typescript-eslint-parser",
+        name: "typescript-eslint-parser",
+        url: "https://github.com/eslint/typescript-eslint-parser",
+    }),
+    Object.freeze({
         id: "espree",
-        name: "espree (the default parser)",
+        name: "espree (the Eslint default parser)",
         url: "https://github.com/eslint/espree",
     }),
     Object.freeze({
         id: "babel-eslint",
         name: "babel-eslint",
         url: "https://github.com/babel/babel-eslint",
-    }),
-    Object.freeze({
-        id: "typescript-eslint-parser",
-        name: "typescript-eslint-parser",
-        url: "https://github.com/eslint/typescript-eslint-parser",
     }),
 ])
 

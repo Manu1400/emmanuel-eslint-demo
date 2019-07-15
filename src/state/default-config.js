@@ -856,18 +856,17 @@ export default Object.freeze({
             const rules = {}
             for (const [name, rule] of linter.getRules()) {
                 const enabled =
-                    name.startsWith("vue/") ||
-                    rule.meta.docs.recommended ||
-                    name === "object-shorthand"
+                    name.startsWith("emmanuel/") ||
+                    rule.meta.docs.recommended // || name === "object-shorthand"
                 rules[name] = enabled ? 2 : 0
             }
             return rules
         })(),
     ),
 
-    parser: "vue-eslint-parser",
+    //parser: "vue-eslint-parser",
     parserOptions: Object.freeze({
-        parser: "espree",
+        parser: "typescript-eslint-parser",
         ecmaVersion: 2019,
         sourceType: "module",
         ecmaFeatures: Object.freeze({ jsx: true }),

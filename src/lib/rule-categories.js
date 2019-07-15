@@ -40,7 +40,7 @@ export const ruleCategories = (() => {
         if (meta == null || meta.docs == null || meta.deprecated) {
             continue
         }
-        const category = name.startsWith("vue/")
+        const category = name.startsWith("emmanuel/")
             ? categoryMap[meta.docs.category] || categoryMap.uncategorized
             : categoryMap.core
 
