@@ -1,6 +1,6 @@
 {
   "name": "emmanuel-eslint-demo",
-  "version": "1.8.0",
+  "version": "2.0.0",
   "description": "The online demo to check `eslint-plugin-emmanuel`.",
   "engines": {
     "node": ">=8"
